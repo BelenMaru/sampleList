@@ -2,7 +2,9 @@ import React from 'react'
 
 function SampleForm() {
   return (
-    <div>SampleForm</div>
+   <form className= "todo-form">
+     <input className="todo-input"/>
+   </form>
   )
 }
 

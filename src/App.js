@@ -1,11 +1,10 @@
-
-import './App.css';
-import SampleForm from './components/SampleForm';
+import "./App.css";
+import SampleForm from "./components/SampleForm";
 
 function App() {
   return (
     <div className="sample-lists">
-      <h2>Lists</h2>
+      <h1>Sample todo Lists</h1>
       <SampleForm />
     </div>
   );

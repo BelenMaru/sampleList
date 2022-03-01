@@ -1,4 +1,4 @@
-import React, {useState} from react;
+import React, {useState} from "react";
 import "./App.css";
 import SampleForm from "./components/SampleForm";
 
@@ -10,7 +10,9 @@ function App() {
       id = todos[0].id + 1
     }
     let todo ={id: id, text: text, completed: false}
-    setTodos = ([todo, ...todos])
+    let newTodos = [todo, ...todos]
+    console.log(newTodos)
+    setTodos(newTodos)
 
 
   }

@@ -2,7 +2,7 @@ import React from 'react'
 
 function SampleItem(props) {
   return (
-    <div>{props.todo.text}</div>
+    <div className= "sample-row">{props.todo.text}</div>
   )
 }
 

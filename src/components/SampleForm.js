@@ -13,9 +13,11 @@ function SampleForm(props) {
   }
   return (
    <form onSubmit={handleSubmit} className= "todo-form">
-     <input onChange ={(e) => setInput(e.target.value)} 
-     className="todo-input" 
-     placeholder="Add a list"/>
+     <input 
+      value={input}
+      onChange ={(e) => setInput(e.target.value)} 
+      className="todo-input" 
+      placeholder="Add a list"/>
      <button type="submit" className= "sample-btn">Add Lists</button>
    </form>
   )

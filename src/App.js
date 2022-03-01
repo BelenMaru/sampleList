@@ -9,6 +9,8 @@ function App() {
     if(todos.length > 0) {
       id = todos[0].id + 1
     }
+    let todo ={id: id, text: text, completed: false}
+    setTodos = ([todo, ...todos])
 
 
   }

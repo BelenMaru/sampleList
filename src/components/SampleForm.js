@@ -1,11 +1,14 @@
 import React,{useState} from 'react'
 
 
-function SampleForm() {
+function SampleForm(props) {
   const [input, setInput] = useState("")
 
   const handleSubmit =(e) => {
     e.preventDefault()
+    props.addList(input)
+    setInput("")
+   
 
   }
   return (

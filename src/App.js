@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import "./App.css";
 import SampleForm from "./components/SampleForm";
+import SampleItem from "./components/SampleItem";
 
 function App() {
   const [todos, setTodos] = useState([])
@@ -20,6 +21,11 @@ function App() {
     <div className="sample-lists">
       <h1>Sample Todo Lists</h1>
       <SampleForm  addList ={addList}/>
+      {todos.map((todo)=> {
+        return (
+          <SampleItem todo={todo} />
+        )
+      })}
     </div>
   );
 }

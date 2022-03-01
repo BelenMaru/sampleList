@@ -1,8 +1,8 @@
 import React from 'react'
 
-function SampleItem() {
+function SampleItem(props) {
   return (
-    <div>SampleItem</div>
+    <div>{props.todo.text}</div>
   )
 }
 

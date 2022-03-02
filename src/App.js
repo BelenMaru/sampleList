@@ -15,7 +15,10 @@ function App() {
     console.log(newTodos)
     setTodos(newTodos)
 
+  }
 
+  const removeTodo =(id) => {
+    
   }
   return (
     <div className="sample-lists">
@@ -23,7 +26,7 @@ function App() {
       <SampleForm  addList ={addList}/>
       {todos.map((todo)=> {
         return (
-          <SampleItem todo={todo} key={todo.id} />
+          <SampleItem removeTodo ={removeTodo} todo={todo} key={todo.id} />
         )
       })}
     </div>

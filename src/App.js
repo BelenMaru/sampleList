@@ -21,13 +21,17 @@ function App() {
     let updatedTodos = [...todos].filter((todo)=> todo.id !=id)
     setTodos(updatedTodos)
   }
+  const completeTodo =(id) => {
+    console.log(id)
+
+  }
   return (
     <div className="sample-lists">
       <h1>Sample Todo Lists</h1>
       <SampleForm  addList ={addList}/>
       {todos.map((todo)=> {
         return (
-          <SampleItem removeTodo ={removeTodo} todo={todo} key={todo.id} />
+          <SampleItem removeTodo ={removeTodo} completeTodo={completeTodo} todo={todo} key={todo.id} />
         )
       })}
     </div>

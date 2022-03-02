@@ -3,14 +3,14 @@ import {RiCloseCircleLine} from "react-icons/ri";
 import {BiCheckCircle} from "react-icons/bi";
 
 function SampleItem(props) {
-  const {todo, removeTodo} = props
+  const {todo, removeTodo, completeTodo} = props
   return (
     <div className="sample-row">
       {todo.text}
       <div className="icon-container">
-        <RiCloseCircleLine className= "icon" 
+        <RiCloseCircleLine 
         onClick={()=> {removeTodo(todo.id)}}/>
-        <BiCheckCircle />
+        <BiCheckCircle onClick={()=> completeTodo(todo.id)} />
       </div>
     </div>
   );

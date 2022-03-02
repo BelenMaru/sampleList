@@ -5,7 +5,7 @@ import {BiCheckCircle} from "react-icons/bi";
 function SampleItem(props) {
   const {todo, removeTodo, completeTodo} = props
   return (
-    <div className="sample-row">
+    <div className={todo.completed ? "sample-row complete" : "sample-row" }>
       {todo.text}
       <div className="icon-container">
         <RiCloseCircleLine 

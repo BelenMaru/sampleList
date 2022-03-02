@@ -22,7 +22,13 @@ function App() {
     setTodos(updatedTodos)
   }
   const completeTodo =(id) => {
-    console.log(id)
+    let updatedTodos = todos.map((todo) => {
+      if (todo.id ===id) {
+        todo.completed =!todo.completed
+      }
+      return todo
+    })
+    setTodos(updatedTodos)
 
   }
   return (

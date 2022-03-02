@@ -23,7 +23,7 @@ function App() {
       <SampleForm  addList ={addList}/>
       {todos.map((todo)=> {
         return (
-          <SampleItem todo={todo} />
+          <SampleItem todo={todo} key={todo.id} />
         )
       })}
     </div>

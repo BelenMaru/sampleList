@@ -18,7 +18,8 @@ function App() {
   }
 
   const removeTodo =(id) => {
-    
+    let updatedTodos = [...todos].filter((todo)=> todo.id !=id)
+    setTodos(updatedTodos)
   }
   return (
     <div className="sample-lists">

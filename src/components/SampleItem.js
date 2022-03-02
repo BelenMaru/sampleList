@@ -7,7 +7,7 @@ function SampleItem(props) {
     <div className="sample-row">
       {todo.text}
       <div className="icon-container">
-        <RiCloseCircleLine className= "icon" onClick= {removeTodo(todo.id)}/>
+        <RiCloseCircleLine className= "icon" onClick={()=> {removeTodo(todo.id)}}/>
       </div>
     </div>
   );

@@ -56,3 +56,6 @@
   font-size: 24px;
   cursor: pointer;
 }
+.complete {
+  text-decoration: line-through;
+}

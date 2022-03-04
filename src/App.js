@@ -33,7 +33,7 @@ function App() {
   }
   return (
     <div className="sample-lists">
-      <h1>Sample Todo Lists</h1>
+      <h1>Todo Lists</h1>
       <SampleForm  addList ={addList}/>
       {todos.map((todo)=> {
         return (
